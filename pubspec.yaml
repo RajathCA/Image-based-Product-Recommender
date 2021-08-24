@@ -1,0 +1,48 @@
+name: recommender
+description: An image based product recommender app.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  animated_text_kit: ^2.5.1
+  camera: ^0.5.8+11
+  cupertino_icons: ^1.0.0
+  flutter_spinkit: ^4.1.2+1
+  flutter_staggered_animations: ^0.1.2
+  font_awesome_flutter: ^8.10.0
+  http: ^0.12.2
+  modal_bottom_sheet: ^0.2.2
+  path: ^1.7.0
+  path_provider: ^1.6.22
+  progress_indicators: ^0.1.5
+  provider: ^4.3.2+2
+  rflutter_alert: ^1.1.0
+  tflite: ^1.1.1
+  url_launcher: ^5.7.8
+  firebase_storage: ^5.0.1
+  firebase_core: ^0.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/tflite_model/mobilenet_v2_1.0_224.tflite
+   - assets/tflite_model/labels.txt
+  fonts:
+    - family: Itim
+      fonts:
+        - asset: fonts/Itim-regular.ttf
+    - family: Reem
+      fonts:
+        - asset: fonts/ReemKufi-Regular.ttf
+    - family: SourceSans
+      fonts:
+        - asset: fonts/SourceSansPro.ttf
